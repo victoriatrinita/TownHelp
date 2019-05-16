@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".CariBantuanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="Help requests nearby"
+                android:layout_margin="40px"
+                android:fontFamily="@font/quicksand"
+                android:layout_marginBottom="40px"
+                android:textColor="#000"/>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20px"
+                        android:layout_marginHorizontal="40px"
+                        android:layout_marginBottom="40px"
+                        app:cardElevation="2dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cuci piring"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:textColor="#B2000000"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Piring bekas pakai 2 hari"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/quicksand_medium"/>
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                    android:id="@+id/location1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_location_on_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/locationText1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/location1"
+                                    android:text="Mlati"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                            <ImageView
+                                    android:id="@+id/time1"
+                                    android:layout_toRightOf="@+id/locationText1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_access_time_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/timeText1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/time1"
+                                    android:text="9.00 WIB"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                            <ImageView
+                                    android:id="@+id/salary1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/timeText1"
+                                    android:src="@drawable/ic_attach_money_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/salaryText1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/salary1"
+                                    android:text="Rp 12.000"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+                        </RelativeLayout>
+
+                        <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorPrimary"
+                                android:text="Help now"
+                                android:fontFamily="@font/quicksand_medium"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20px"
+                        android:layout_marginHorizontal="40px"
+                        android:layout_marginBottom="40px"
+                        app:cardElevation="2dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Siram bunga"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/quicksand_medium"
+                                android:textColor="#B2000000"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Bunga di halaman rumah"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/quicksand_medium"/>
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                    android:id="@+id/location"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_location_on_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/locationText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/location"
+                                    android:text="Mlati"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                            <ImageView
+                                    android:id="@+id/time"
+                                    android:layout_toRightOf="@+id/locationText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_access_time_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/timeText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/time"
+                                    android:text="18.00 WIB"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                            <ImageView
+                                    android:id="@+id/salary"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/timeText"
+                                    android:src="@drawable/ic_attach_money_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/salaryText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/salary"
+                                    android:text="Rp 10.000"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                        </RelativeLayout>
+
+                        <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorPrimary"
+                                android:text="Help now"
+                                android:fontFamily="@font/quicksand_medium"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20px"
+                        android:layout_marginHorizontal="40px"
+                        android:layout_marginBottom="40px"
+                        app:cardElevation="2dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Siram bunga"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/quicksand_medium"
+                                android:textColor="#B2000000"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Bunga di halaman rumah"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/quicksand_medium"/>
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                    android:id="@+id/location3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_location_on_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/locationText3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/location3"
+                                    android:text="Mlati"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                            <ImageView
+                                    android:id="@+id/time"
+                                    android:layout_toRightOf="@+id/locationText3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_access_time_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/timeText3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/time"
+                                    android:text="18.00 WIB"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                            <ImageView
+                                    android:id="@+id/salary3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/timeText3"
+                                    android:src="@drawable/ic_attach_money_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/salaryText3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/salary3"
+                                    android:text="Rp 10.000"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                        </RelativeLayout>
+
+                        <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorPrimary"
+                                android:text="Help now"
+                                android:fontFamily="@font/quicksand_medium"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20px"
+                        android:layout_marginHorizontal="40px"
+                        android:layout_marginBottom="40px"
+                        app:cardElevation="2dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Siram bunga"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/quicksand_medium"
+                                android:textColor="#B2000000"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Bunga di halaman rumah"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/quicksand_medium"/>
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                    android:id="@+id/location4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_location_on_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/locationText4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/location4"
+                                    android:text="Mlati"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                            <ImageView
+                                    android:id="@+id/time"
+                                    android:layout_toRightOf="@+id/locationText4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_access_time_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/timeText4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/time"
+                                    android:text="18.00 WIB"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                            <ImageView
+                                    android:id="@+id/salary4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/timeText4"
+                                    android:src="@drawable/ic_attach_money_black_24dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                    android:id="@+id/salaryText4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/salary4"
+                                    android:text="Rp 10.000"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/quicksand"/>
+
+                        </RelativeLayout>
+
+                        <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorPrimary"
+                                android:text="Help now"
+                                android:fontFamily="@font/quicksand_medium"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
